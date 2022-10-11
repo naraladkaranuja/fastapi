@@ -13,9 +13,9 @@ on:
         type: choice
         description: Make a choice
         options:
-        - foo
-        - bar
-        - baz
+        - adi-d1
+        - adi-s1
+        - adi-p1
 jobs:
   build:
     runs-on: ubuntu-latest
