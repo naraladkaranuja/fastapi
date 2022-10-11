@@ -5,7 +5,7 @@ on:
     inputs:
       choice:
         default: adi-d1
-        required: True
+        required: true
         type: choice
         description: Select the Environment
         options:
