@@ -12,6 +12,13 @@ on:
         - adi-d1
         - adi-s1
         - adi-p1
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Token'
+        # Default value if no value is explicitly provided
+        default: 'World'
+        # Input has to be provided for the workflow to run
+        required: true
       
         
         
