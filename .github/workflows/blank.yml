@@ -6,10 +6,13 @@ on:
       environment:
         type: environment
         description: Select the environment
+               
+        
       boolean:
         type: boolean
         description: True or False
       choice:
+        default: adi-d1
         type: choice
         description: Make a choice
         options:
@@ -26,3 +29,4 @@ jobs:
       - name: greet
         run: | 
           echo "choice is ${{ github.event.inputs.choice }}" / ${{ inputs.choice }}
+          
