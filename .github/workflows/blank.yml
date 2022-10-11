@@ -28,8 +28,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
 
-      - name: greet
-        run: echo "choice is ${{ github.event.inputs.choice }}" / ${{ inputs.choice }}
+    # Runs a single command using the runners shell
+
+    - name: Send greeting
+
+      run: echo "Hello ${{ github.event.inputs.name }}"
           
