@@ -17,6 +17,7 @@ on:
         type: choice
         description: Make a choice
         options:
+        - adi-d1
         - adi-s1
         - adi-p1
 jobs:
