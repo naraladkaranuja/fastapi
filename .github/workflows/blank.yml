@@ -3,23 +3,22 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      environment:
-        type: environment
-        description: Select the environment
-               
-        
-      boolean:
-        type: boolean
-        description: True or False
       choice:
         default: adi-d1
         required: True
         type: choice
-        description: Make a choice
+        description: Select the Environment
         options:
         - adi-d1
         - adi-s1
         - adi-p1
+      env:
+        required: True
+        type: choice
+        description: Token
+        
+        
+      
 jobs:
   build:
     runs-on: ubuntu-latest
