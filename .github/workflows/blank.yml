@@ -5,7 +5,13 @@ on:
     inputs:
       boolean:
         type: boolean
-        description: True or False or Anu
+        description: -5k 
+      boolan:
+        type: boolean
+        description: -10k
+        
+        
+        
       choice:
         default: adi-d1
         required: true
