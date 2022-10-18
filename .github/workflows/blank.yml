@@ -6,7 +6,7 @@ on:
       choice:
         default: adi-d1
         required: true
-        type: choice
+        type: list
         description: Select the Environment
         options:
         - adi-d1
