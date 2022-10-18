@@ -3,6 +3,9 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
+      boolean:
+        type: boolean
+        description: True or False or Anu
       choice:
         default: adi-d1
         required: true
@@ -32,6 +35,9 @@ jobs:
     # Runs a single command using the runners shell
 
     - name: Send greeting
-
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      
+      run: |
+        echo "Hello ${{ github.event.inputs.name }}"
+        echo "boolean is ${{ github.event.inputs.boolean }}" / ${{ inputs.boolean }} 
+         
           
