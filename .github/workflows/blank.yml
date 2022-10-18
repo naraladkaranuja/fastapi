@@ -5,10 +5,10 @@ on:
     inputs:
       boolean:
         type: boolean
-        description: -5k 
+        description: -data_5K
       boolan:
         type: boolean
-        description: -10k
+        description: -data_10k
         
         
         
