@@ -9,6 +9,9 @@ on:
       boolan:
         type: boolean
         description: -data_10k
+      boo:
+        type: boolean
+        description: -data_15k
         
         
         
