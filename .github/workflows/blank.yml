@@ -15,6 +15,7 @@ on:
         - p1
         - test
       environment:
+        type: text
         
         description: Select the environment
       boolean:
