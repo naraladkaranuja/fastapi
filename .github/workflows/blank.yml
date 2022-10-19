@@ -18,19 +18,16 @@ on:
       boolean:
         
         type: boolean
-        description: -data_5K
+        description: data
+        options: 
+        - data_10k
+        - data-30k
       boolan:
         type: boolean
         description: -data_10k
       boo:
         type: boolean
-        description: -data_15k
-        
-        
-        
-
-        
-        
+        description: -data_15k       
       
 jobs:
   build:
