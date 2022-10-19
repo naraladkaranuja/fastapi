@@ -15,7 +15,7 @@ on:
         - p1
         - test
       environment:
-        type: environment
+        
         description: Select the environment
       boolean:
         type: boolean
