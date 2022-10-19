@@ -4,15 +4,16 @@ on:
   workflow_dispatch:
     inputs:
     
-      choice:
-        default: adi-d1
-        required: true
-        type: list
-        description: Select the Environment
+      instance:
+        default: d1
+        required: True
+        type: choice
+        description: Select the instance
         options:
-        - adi-d1
-        - adi-s1
-        - adi-p1
+        - d1
+        - s1
+        - p1
+        - test
       boolean:
         type: boolean
         description: -data_5K
@@ -40,7 +41,7 @@ jobs:
     - name: Send greeting
       
       run: |
-        echo "Hello ${{ github.event.inputs.choice }}"
+        echo "Hello ${{ github.event.inputs.instance}}" / ${{ inputs.instance }}
         echo "boolean is ${{ github.event.inputs.boolean }}" / ${{ inputs.boolean }} 
         
          
