@@ -44,7 +44,7 @@ jobs:
       
       run: |
         echo "Hello ${{ github.event.inputs.instance}}" / ${{ inputs.instance }}
-        echo "boolean is ${{ github.event.inputs.boolean }}" / ${{ inputs.boo }} 
+        echo "boo is ${{ github.event.inputs.boolean }}" / ${{ inputs.boo }} 
         
          
           
