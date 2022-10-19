@@ -14,11 +14,9 @@ on:
         - s1
         - p1
         - test
-      environment:
-        type: text
-        
-        description: Select the environment
+      
       boolean:
+        
         type: boolean
         description: -data_5K
       boolan:
